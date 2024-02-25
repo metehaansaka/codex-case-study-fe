@@ -15,4 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 API KEY in `src/components/MapContainer.tsx`.
 
-Default BE Server: `localhost:8070`
+Default BE Server: `https://cloistered-van-production.up.railway.app`
+
+If you want to change the default BE server to localhost:8070, you can modify it in `src/api/nearbySearchApi.ts` file.
+
