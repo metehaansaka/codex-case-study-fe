@@ -7,7 +7,7 @@ const MapContainer: React.FC<any> = ({ locations,center }) => {
   });
 
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={{ width: '100%', height: '400px' }} zoom={15} center={{ lat:37.7937,lng:-122.3965 }}>
+    <GoogleMap mapContainerStyle={{ width: '100%', height: '400px' }} zoom={15} center={center}>
       {locations.map((location:any, index:any) => (
         <Marker key={index} position={{ lat: location.lat, lng: location.lng }} />
       ))}

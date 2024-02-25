@@ -5,7 +5,7 @@ export const findNearbyPlaces = async (formData: FormData) => {
       params.append(key, value as string);
     }
   }
-  const url = `http://localhost:8070/api/findNearbyPlaces?${params.toString()}`;
+  const url = `https://cloistered-van-production.up.railway.app/api/findNearbyPlaces?${params.toString()}`;
 
   try {
     const response = await fetch(url, {
